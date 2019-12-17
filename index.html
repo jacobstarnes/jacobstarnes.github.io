@@ -15,14 +15,55 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Theme CSS -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
+	 <link href="css/freelancer.css" rel="stylesheet">
+	<!--
+	 <link href="scss/main.min.css" rel="stylesheet">
+
+ -->
+<style>
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #43d7ff;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #43d7ff;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #1a1c21;
+    background: #43d7ff;
+}
+.btn-hover
+.portfolio-modal .close {
+  color: #43d7ff;
+  opacity: 0;
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+  background-color: #43d7ff;
+}
+.barstuff {
+	background:#1a1c21; 
+	color:#43d7ff;
+}
+.masterhead-pic {
+background:#004445;
+background-image: url('img/bg6.jpg');
+}
+.bg-dark {
+background:#2a3132;
+}
+.bg-bluegem {
+background:#004445;
+}
+.second-btn {
+margin:2px 0px 0px 2px;
+}
+</style>
 
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg text-uppercase fixed-top" style="background:#004445" id="mainNav">
+  <nav class="navbar navbar-expand-lg text-uppercase fixed-top barstuff" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">JS Web Dev</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +87,7 @@
   </nav>
 
   <!-- Masthead -->
-  <header class="masthead text-white text-center" style="background:#004445;background-image: url('img/bg6.jpg')">
+  <header class="masthead text-white text-center masterhead-pic">
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image 
@@ -56,16 +97,16 @@
       <h1 class="masthead-heading text-uppercase mb-0" style="text-shadow: 2px 2px black">Jacob Starnes</h1>
 
       <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-globe"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
+			<div class="divider-custom divider-light">
+				<div class="divider-custom-line"></div>
+				<div class="divider-custom-icon">
+					<i class="fas fa-globe"></i>
+				</div>
+				<div class="divider-custom-line"></div>
+			</div>
 
       <!-- Masthead Subheading -->
-<div class="rounded p-2" style="background:#0a0f0f">
+<div class="rounded p-2" style="background:black">
       <p class="masthead-subheading font-weight-light mb-0">Website Design and Development</p>
       </div>
     </div>
@@ -129,7 +170,7 @@
   </section>
 
   <!-- About Section -->
-  <section class="page-section text-white mb-0" style="background:#2a3132"id="about">
+  <section class="page-section text-white mb-0 bg-dark" id="about">
     <div class="container">
 
       <!-- About Section Heading -->
@@ -159,7 +200,7 @@
 <i class="fas fa fa-edit fa-stack-1x fa-inverse"></i>
 </span>
 <h4 class="text-white">CMS</h4>
-         <p class="lead">Using intuitive Content-Management-System platforms such as WordPress and SiteLeaf that make updating and editing your content simple and fun.</p>
+         <p class="lead">Using intuitive Content-Management-System platforms such as WordPress and Jekyll that make updating and editing your content simple and fun.</p>
 </div> 
 
  <div class="col-md-4 text-center">
@@ -212,7 +253,7 @@
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Phone Number</label>
-                <input name="phone" class="form-control border rounded pl-2" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                <input name="phone" class="form-control border rounded pl-2" id="phone" type="tel" pattern="^(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}$" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -238,7 +279,7 @@
       
 
   <!-- Footer -->
-  <footer class="footer text-center" style="background:#004445">
+  <footer class="footer text-center bg-bluegem" style="">
     <div class="container">
       <div class="row">
 
@@ -278,7 +319,7 @@
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
-        <button type="button" class="close" style="color:#004445"data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close bg-bluegem" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
             <i class="fas fa-times"></i>
           </span>
@@ -300,8 +341,8 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/example1.jpg" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5"> A great sample for your next business website</p> <a class="btn text-white" style="background:#004445"href="example1/index.html"><i></i>View This Example Webpage</a>
-                <button class="btn text-white" style="background:#004445;margin:2px 0px 0px 2px"href="#" data-dismiss="modal">
+                <p class="mb-5"> A great sample for your next business website</p> <a class="btn text-white bg-bluegem" href="example1/index.html"><i></i>View This Example Webpage</a>
+                <button class="btn text-white bg-bluegem second-btn" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
                 </button>
@@ -317,7 +358,7 @@
   <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
-        <button type="button" class="close"  style="color:#004445" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close bg-bluegem" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
             <i class="fas fa-times"></i>
           </span>
@@ -340,8 +381,8 @@
                 <img class="img-fluid rounded mb-5" src="img/example2.jpg" alt="">
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">A great sample for your next business website</p>
-                <a class="btn text-white" style="background:#004445" href="example2/index.html"><i></i>View This Example Webpage</a> 
-		<button class="btn text-white" style="background:#004445;margin:2px 0px 0px 2px"href="#" data-dismiss="modal">
+                <a class="btn text-white bg-bluegem"  href="example2/index.html"><i></i>View This Example Webpage</a> 
+		<button class="btn text-white bg-bluegem second-btn" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
                 </button>
@@ -357,7 +398,7 @@
   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" style="color:#004445" aria-label="Close">
+        <button type="button" class="close bg-bluegem" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
             <i class="fas fa-times"></i>
           </span>
@@ -380,8 +421,8 @@
                 <img class="img-fluid rounded mb-5" src="img/example3.jpg" alt="">
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">A great sample for your next business website</p>
-                <a class="btn text-white" style="background:#004445" href="example3/index.html"><i></i>View This Example Webpage</a>
-		<button class="btn text-white" style="background:#004445;margin:2px 0px 0px 2px"href="#" data-dismiss="modal">
+                <a class="btn text-white bg-bluegem" href="example3/index.html"><i></i>View This Example Webpage</a>
+		<button class="btn text-white bg-bluegem second-btn" "href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
                 </button>
@@ -392,124 +433,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -3931,7 +3931,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #1abc9c;
+  background-color: blue;
 }
 
 .nav-fill .nav-item {
@@ -9654,9 +9654,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #43d7ff;
 }
-
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
@@ -9846,4 +9845,44 @@ form .row:first-child .floating-label-form-group {
 
 .copyright {
   background-color: #1a252f;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #43d7ff;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #43d7ff;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #1a1c21;
+    background: #43d7ff;
+}
+.portfolio-modal .close {
+  color: #43d7ff;
+  opacity: 0;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  background-color: #43d7ff;
+}
+
+.barstuff {
+	background:#1a1c21; 
+	color:#43d7ff;
+}
+
+.masterhead-pic {
+background:#004445;
+background-image: url('img/bg6.jpg');
+}
+
+.bg-dark {
+background:#2a3132;
+}
+.bg-bluegem {
+background:#004445;
+}
+
+.second-btn {
+margin:2px 0px 0px 2px;
 }
