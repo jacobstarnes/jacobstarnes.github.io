@@ -22,15 +22,34 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+<style>
 
+#mainNav {
+background:#A00000;
+}
+#nav-brand {
+font-size: calc(12px + 1vw);
+}
+#masterhead-text {
+text-shadow: 0px 2px white;
+font-style:talic;
+font-size: calc(45px + 1vw);
+}
+.bg-darker {
+background:#222222;
+}
+.text-red-custom {
+color:#A00000;
+}
+</style>
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background:#A00000">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger mx-0" href="#page-top" style="font-size: calc(12px + 1vw)">Apex Alpha Moving</a>
+      <a class="navbar-brand js-scroll-trigger mx-0" id="nav-brand" href="#page-top">Apex Alpha Moving</a>
       <button class="navbar-toggler navbar-toggler-right text-white"  type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -55,12 +74,12 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-<h1 class="text-upper" style="text-shadow: 0px 2px white;font-style:talic;font-size: calc(45px + 1vw)">Apex Alpha Moving</h1>
+<h1 class="text-upper" id="masthead-text">Apex Alpha Moving</h1>
       </div>
     </div>
   </header>
   <!-- Top Section -->
-  <section class="page-section" style="background:#222222" id="about">
+  <section class="page-section bg-darker" id="about">
     <div class="container" >
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
@@ -85,7 +104,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
-					<h2 class="mt-0" style="color:#A00000">Services</h2>
+					<h2 class="mt-0 text-red-custom">Services</h2>
 					<p class="text-dark mb-4"><i>Providing excellence and expertise to our clients</i></p>
 
 					<hr class="divider light my-4">
@@ -94,26 +113,26 @@
 			<div class = "row">
 				<div class="col-md-4 text-center">
 					<span class="fa-stack fa-4x">
-						<i class="fas fa-circle fa-stack-2x" style="color:#A00000"></i>
+						<i class="fas fa-circle fa-stack-2x text-red-custom"></i>
 						<i class="fas fa-home fa-stack-1x fa-inverse text-white"></i>
 					</span>
-					<h4 style="color:#A00000">Residential</h4>
+					<h4 class="text-red-custom">Residential</h4>
 					<p class="text-dark mb-4 text-center">We provide all aspects of packing and loading. We tackle challenges great and small, from furnature assembly to packing uniquely shaped and delicate items.<p>
 				</div>
 				<div class="col-md-4 text-center">
 					<span class="fa-stack fa-4x">
-						<i class="fas fa-circle fa-stack-2x" style="color:#A00000"></i>
+						<i class="fas fa-circle fa-stack-2x text-red-custom"></i>
 						<i class="fas fa-building fa-stack-1x fa-inverse text-white"></i>
 					</span>
-					<h4 style="color:#A00000">Commercial</h4>
+					<h4 class="text-red-custom">Commercial</h4>
 					<p class="text-dark mb-4 text-center">Allow our team to handle the details so you can spend more time and thought on business operations. We have experience in everything from cublicle partitions to desks.</p> 
 				</div>
 				<div class="col-md-4 text-center">
 					<span class="fa-stack fa-4x">
-						<i class="fas fa-circle fa-stack-2x" style="color:#A00000"></i>
+						<i class="fas fa-circle fa-stack-2x text-red-custom"></i>
 						<i class="fas fa-route fa-stack-1x fa-inverse text-white"></i>
 					</span>
-					<h4 style="color:#A00000">Local or Distance</h4>
+					<h4 class="text-red-custom">Local or Distance</h4>
 					<p class="text-dark mb-4 text-center">Whether moving localy or long-distance, our team of experts will transport your belongings quickly and safely.<p>
 
 				</div>
