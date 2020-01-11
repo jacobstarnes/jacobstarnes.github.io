@@ -231,12 +231,22 @@ text-shadow: black 2px 2px;
 								}
 							},
 							"cart": {
-								"text": {
-									"total": "Subtotal",
-									"button": "Checkout"
-								}
-							}
-						},
+												"styles": {
+													"button": {
+														":hover": {
+															"background-color": "#e65c00"
+														},
+														"background-color": "#ff6600",
+														":focus": {
+															"background-color": "#e65c00"
+														}
+													}
+												},
+												"text": {
+													"total": "Subtotal",
+													"button": "Checkout"
+												}
+											},						},
 					});
 				});
 			}
