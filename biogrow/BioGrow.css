@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding:0;
+}
+.navSection {
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+}
+.nav-area {
+	background: #2f422f;
+	display:flex;
+}
+.logo {
+	width: 20%;
+	color:white;
+	font-size: 2rem;
+	padding: 1rem .1rem .1rem 1rem;
+}
+.nav-area ul {
+	width: 80%;
+	list-style: none;
+	display: flex;	
+	flex-wrap: nowrap;
+	text-align:center;
+}
+.nav-area li {
+	width: 20%;
+	padding: 1rem .5rem 1rem .5rem;
+}
+
+.nav-area a {
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	height: 100%;
+	display: inline-block;
+}
+.nav-area li:hover {
+	background: #fff04a;
+}
+.nav-area li:hover a {
+	background: #fff04a;
+	color:#2f422f;
+}
+
+.animScrollDown {
+	animation: navScrollDown .5s forwards;
+}
+
+.animScrollUp {
+	animation: navScrollUp .5s forwards;
+}
+@keyframes navScrollDown {
+	0% {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	100% {
+		padding-top: .0rem;
+		padding-bottom: .0rem;
+	}
+}
+@keyframes navScrollUp {
+	0% {
+		padding-top: .0rem;
+		padding-bottom: .0rem;
+	}
+	100% {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}
+
+.animLogoScrollUp {
+	animation: animLogoScrollUp .5s forwards;
+}
+.animLogoScrollDown {
+	animation: animLogoScrollDown .5s forwards;
+}
+
+@keyframes animLogoScrollDown {
+	0% {
+		font-size: 25px;
+	}
+	100% {
+		font-size: 20px;
+	}
+}
+@keyframes animLogoScrollUp {
+	0% {
+		font-size: 20px;
+	}
+	100% {
+		font-size: 25px;
+	}
+}
+
+.hamburger {
+	display:none
+}
+
+.line {
+width: 40px;
+height:7px;
+background: red;
+margin-bottom: 5px;
+border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+	.nav-list {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+
+}
+
+
