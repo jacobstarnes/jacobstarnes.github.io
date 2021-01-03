@@ -10,7 +10,7 @@ header {
   padding: 1rem;
 }
 
-#logo {
+.logo {
 	font-size: 1.5rem;
 }
 
@@ -106,7 +106,7 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 950px) {
   .nav-toggle-label {
     display: none;
   }
@@ -116,8 +116,9 @@ nav a:hover {
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
   
-  #logo {
-    font-size: 2.5rem;
+  .logo {
+ 	grid-column: 2 / 3;
+    	font-size: 2.5rem;
   }
 
   

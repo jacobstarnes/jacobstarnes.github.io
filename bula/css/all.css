@@ -142,7 +142,7 @@ footer {
 	display: inline-block;
 	max-width: 100%;
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 950px) {
 
 	.container {
 		padding-right: 8rem;
@@ -156,12 +156,12 @@ footer {
 }
 	.row-text, .row-img {
 		max-width: 500px;
-		max-width: 500px;
+		min-width: 300px;
 		margin-left: 8rem;
 	}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
 	.shopify-collection {
 		padding: 0 .5rem 0 .5rem;
 	}
@@ -171,7 +171,7 @@ footer {
 
 	#hero {
 		justify-content: flex-end;
-		background-image: url("/stillnew.jpg");
+		background-image: url("/bula/stillnew.jpg");
 		background-position: 50%;
 		min-height: 70vh;
 		padding-bottom: 20px;
