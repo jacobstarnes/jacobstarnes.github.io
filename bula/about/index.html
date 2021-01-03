@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type='text/css' href="/jacobstarnes.dev/bula/css/all.css">
-		<link rel="stylesheet" type='text/css' href="/jacobstarnes.dev/bula/css/nav.css">
-		<link rel="stylesheet" type='text/css' href="/jacobstarnes.dev/bula/css/footer.css">
+		<link rel="stylesheet" type='text/css' href="/bula/css/all.css">
+		<link rel="stylesheet" type='text/css' href="/bula/css/nav.css">
+		<link rel="stylesheet" type='text/css' href="/bula/css/footer.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <!-- Custom fonts for this template -->
   	<title>
@@ -17,10 +17,10 @@
   <input type="checkbox" id="nav-toggle" class="nav-toggle">
 <nav>
 	<ul>
-		<li><a href="/" >home</a></li>
-		<li><a href="/about/"  class="active" >about</a></li>
-		<li><a href="/contact/" >contact</a></li>
-		<li><a href="/shop/">shop</a></li>
+		<li><a href="/bula/" >home</a></li>
+		<li><a href="/bula/about/">about</a></li>
+		<li><a href="/bula/contact/">contact</a></li>
+		<li><a href="/bula/shop/">shop</a></li>
 	</ul>
 </nav>  <label for="nav-toggle" class="nav-toggle-label">
     <span></span>
@@ -49,13 +49,13 @@
 </div>
 
 <div class="row-img faders">
-<img src="/img/sorghum-field-red.jpg" />
+<img src="/bula/img/sorghum-field-red.jpg" />
 </div>
 
 </div>
 <div class="row">
 <div class="row-img faders">
-<img src="/img/sorghum-young-seedhead.jpg" />
+<img src="/bula/img/sorghum-young-seedhead.jpg" />
 </div>
 
 <div class="row-text">
@@ -71,7 +71,7 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 </div>
 <div class="row-img faders">
-<img src="/img/sorghum-field-sky.jpg" />
+<img src="/bula/img/sorghum-field-sky.jpg" />
 </div>
 </div>
 
@@ -101,26 +101,6 @@
 	});
 tl.from(".row-img", { y:200, opacity: 0, duration: 1.2});
 tl.from(".row-text", { y:70, opacity: 0, duration: .8}, "--=1.2");
-</script>
-
-<script>
-#$$(document).on("scroll", function() {
-  var pageTop = $(document).scrollTop();
-  var pageBottom = pageTop + $(window).height();
-  var tags = $(".faders");
-
-  for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i];
-
-    if ($(tag).position().top < pageBottom) {
-      $(tag).addClass("visible");
-    } else {
-      $(tag).removeClass("visible");
-    }
-  }
-});
-
-
 </script>
 
 
