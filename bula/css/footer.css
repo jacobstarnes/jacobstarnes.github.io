@@ -1,0 +1,151 @@
+
+#footer-container-top {
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content:center;
+	background:#ffdf83;
+	asdf:	bfd06a;
+	align-content: stretch;
+	align-items: stretch;
+}
+
+#footer-container-top h3 {
+	text-align:center;
+}
+
+#footer-newsletter, #footer-social, #footer-contact, #footer-map {
+	padding:7px 0px 7px 0px;
+	flex: 1;
+	border-bottom: 1px solid black;
+	margin-left: 10px;
+	margin-right:10px;
+	margin-bottom:4px;
+
+}
+#footer-social, #footer-map {
+	min-width: 140px;
+}
+
+#footer-map ul {
+	min-height: 80%;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0px 20px 0px;
+}
+
+#footer-map ul li {
+}
+
+#footer-form div {
+	padding: 2 2 2 2;
+	margin: 2 2 2 2;
+}
+#footer-form div input{
+	border-radius: .3rem;
+	border: .125rem solid #dee2e6;
+	margin: 2px 2px 2px 2px;
+	font-size: 1.4rem;
+	padding-left: 8px;
+
+}
+
+#signUpButton {
+	display: inline-block;
+	text-align:center;
+	vertical-align:middle;
+	font-size:1.25rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	color:white;
+	ackground: #ff6600;
+	background: black;
+	border: .125rem solid transparent;
+	border-radius: .125rem;
+	padding: .5rem 1rem;
+	margin: 4px;
+
+}
+
+#signUpButton:hover {
+	ackground: #ff6600;
+	background: #60371a;
+}
+
+#.footer-line {
+	width: 80%;
+	margin:auto;
+	margin-top:3px;
+	color:black;
+	border:0;
+	height:2px;
+	background: black;
+}
+
+.footer-titles {
+	font-weight: bold;
+	olor: #60371a;
+	color: black;
+}
+
+#footer-social ul {
+	display:flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	list-style: none;
+}
+
+#footer-social ul li {
+	flex:auto;
+	font-size:2rem;
+	text-align: center;
+}
+#footer-social ul li a {
+	olor: #60371a;
+	color: black;
+}
+
+#footer-social ul li a:hover {
+	color: #60371a;
+}
+
+#footer-map ul li a:hover {
+	color: #60371a;
+}
+
+#footer-contact {
+	display:flex;
+	flex-direction:column;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+}
+
+#footer-contact div {
+	padding: 4px;
+}
+#footer-copyright {
+	font-size: small;
+	background: #222;
+	color: white;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.mobile-order-1 {
+		order: -1;
+	}
+	#footer-container-top {
+		display:flex;
+		flex-direction:column;
+		flex-wrap: no-wrap;
+		justify-content:center;
+		align-content: stretch;
+		align-items: stretch;
+	}
+}
+

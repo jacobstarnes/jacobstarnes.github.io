@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type='text/css' href="/css/all.css">
+		<link rel="stylesheet" type='text/css' href="/css/nav.css">
+		<link rel="stylesheet" type='text/css' href="/css/footer.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <!-- Custom fonts for this template -->
+  	<title>
+			</title>
+	</head>
+	<!--Navigation--!>
+	 <header>
+	<p id="logo">Bula Land Mills</p>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+<nav>
+	<ul>
+		<li><a href="/"  class="active" >home</a></li>
+		<li><a href="/about/" >about</a></li>
+		<li><a href="/contact/" >contact</a></li>
+		<li><a href="/shop/">shop</a></li>
+	</ul>
+</nav>  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>
+
+
+
+	<!--end--!>
+	<body style="">
+	<div id="page-container">
+	<div id="content-wrap">
+	<div id="hero">
+<video autoplay="" muted="" loop="" id="video">
+<source src="Sorghum_b300.mp4" poster="/stillnew.jpg" type="video/mp4" />
+</video>
+<div id="title-block">
+<h1>Heavenly taste of an ancient grain</h1>
+<p>Non-GMO ● Gluten Free ● Lectin Free ●  Pesticide Free</p>
+</div>
+</div>
+<section>
+<div id="announcement-bar" style="border-bottom: solid green 1px; margin-bottom: 2px;">
+<center>
+<h1>Grains, Flour, and More. Order now and start eating 'Ancient.'</h1>
+<a href="/Shop/"><button id="announcement-bar-button">Shop Now <span class="fa fa-angle-right" aria-hidden="true"></span></button></a>
+</center>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row">
+<div class="row-text">
+<h1>What is Sorghum?</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+</div>
+
+<div class="row-img faders">
+<img src="sorghum-seedhead.jpg" />
+</div>
+
+</div>
+<div class="row">
+<div class="row-img faders">
+<img src="sorghum-seeds.jpg" />
+</div>
+
+<div class="row-text">
+<h1>Health Benefits</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+</div>
+
+</div>
+
+<div class="row">
+<div class="row-text">
+<h1>Sustainable Farming</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+</div>
+<div class="row-img faders">
+<img src="sorghum-field.jpg" />
+</div>
+</div>
+
+</div>
+</section>
+<section>
+<div id="announcement-bar" style="border-top: solid green 1px;margin-top:2px">
+<center>
+<h1>Browse our selection of Grains, Flour, and More.</h1>
+<a href="/Shop/"><button id="announcement-bar-button">Shop Now <span class="fa fa-angle-right" aria-hidden="true"></span></button></a>
+</center>
+</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+
+<script>
+	let tl = gsap.timeline({
+		scrollTrigger: {
+		trigger: '.faders',
+		}
+	});
+tl.from(".row-img", { :200, opacity: 0, duration: 1.2});
+tl.from(".row-text", { y:70, opacity: 0, duration: .8}, "-=1.2");
+</script>
+
+
+	
+	</div>
+	<!--Footer--!>
+	 <footer>
+	<div id="footer-container-top">
+	<div id="footer-social">
+		<h3 class="footer-titles">Follow Us</h3>
+		<ul>
+			<li><a href="#"><span class="fa fa-instagram hover-black" href="#"></span></a></li>
+			<li><a href="#"><span class="fa fa-facebook hover-black"></span></a></li>
+			<li><a href="#"><span class="fa fa-twitter hover-black"></span></a></li>
+		</ul>
+	</div>
+
+<div id="footer-newsletter" class="mobile-order-1">
+		<h3 class="footer-titles">Newsletter</h3>
+		<center><p><i>Billy Tiller Likes to send you emails</i></p></center>
+		<center>
+		<form name="sentMessages" id="footer-form" novalidate="novalidate" action="#" method="POST" accept-charset="UTF-8">
+		<div>
+			<input name="email" class="" id="email" type="email" placeholder="email" required="required" data-validation-required-message="Please enter your email">
+	</div>
+	<div>
+			<input name="firstName" class="" id="fname" type="text" placeholder="first name" required="required" data-validation-required-message="Please enter your first name">
+			</div>
+			<div>
+			<input name="lastName" class="" id="lname" type="text" placeholder="last name" required="required" data-validation-required-message="Please enter your last name">
+	</div>
+	<button type="submit" class="hover-black" id="signUpButton">Sign Up</button>
+			</form>
+		</center>
+		<!--	<hr class="footer-line">--!>
+	</div>
+
+<div id="footer-map">
+	<h3 class="footer-titles">More</h3>
+	<ul>
+	<li><a class="footer-titles" href="/">home</a></li>
+	<li><a class="footer-titles" href="/about/">about</a></li>
+	<li><a class="footer-titles" href="/contact/">contact</a></li>
+	<li><a class="footer-titles" href="/shop/">shop</a></li>
+	</ul>
+	</div>
+
+	<div id="footer-contact">
+	<div>
+		<h3 class="footer-titles">Contact Us</h3>
+		</div>
+		<div>
+		<p><span class="footer-titles">Phone:</span>
+		 (000) 000-0000
+		 <p><span class="footer-titles">Email:</span>
+		 <a href= 'mailto: contact@email.email' style="font-weight:bolder;color:black">contact@email.email</a></p>
+		 <p><span class="footer-titles">Address:</span>
+		 <br>
+		PO BOX 1234
+		<br>City, State 0000
+		 </p>
+	</div>
+	</div>
+
+		</div>
+	<div id="footer-copyright">
+		<center>Copyright © 2020 Bula Land Mills LLC 2020</center>
+		<center><a href="#" style="color:white">Privacy Policy</a><span> | </span><a href="#" style="color:white">Terms and Conditions</a></center>
+	</div>
+
+</footer>
+
+	<!--end--!>
+	 </div>
+	</body>
+</html>
+
